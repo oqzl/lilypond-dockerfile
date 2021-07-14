@@ -1,2 +1,2 @@
 #! /bin/bash
-docker run --rm -v $(pwd):/lilypond seekworser/lilypond "$@"
+docker run --rm -v $(pwd):/lilypond oqzl/lilypond "$@"
