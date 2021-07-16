@@ -4,7 +4,7 @@ COPY entrypoint /entrypoint
 
 RUN sed -i.bak -e "s%http://archive.ubuntu.com/ubuntu/%http://ftp.jaist.ac.jp/pub/Linux/ubuntu/%g" /etc/apt/sources.list \
   && apt update \
-  && apt install -y \
+  && ACCEPT_EULA=y apt install -y \
   fonts-noto \
   fonts-ipafont \
   fonts-ipaexfont \
